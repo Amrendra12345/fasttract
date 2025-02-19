@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Disallow: /checkout/
+Disallow: /success/
+Disallow: /_next/
+
+# Sitemaps
+Sitemap: https://fasttrackvisa.com/sitemap.xml

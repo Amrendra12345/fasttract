@@ -1,0 +1,138 @@
+.search_country{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    .origin_country{
+        width: 100%;
+        position: relative;
+    }
+    .destination_country{
+        width: 100%;
+        position: relative;
+    }
+    .getVisaBtn{
+        width: 22.5rem;
+        margin-top: 0;
+        .btn{
+            margin-top: 0;
+        }
+    }
+    .ftv-field{
+        background-color: #fff;
+        margin-top: 0;        
+    }
+    .country_list{
+        position: absolute;
+        top: 77px;
+        left: 4px;
+        width: 191px;
+        z-index: 999;
+        max-height: 244px;
+        overflow: auto;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+        &::-webkit-scrollbar {
+            width: 10px;
+         }
+         &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+          }
+          &::-webkit-scrollbar-thumb {
+            background: #888;
+          }
+          &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+          }
+          li{
+            padding: 6px 16px;
+            cursor: pointer;
+            display: block;
+            color: #141414;
+            font-size: 14px;
+            font-weight: 500;
+            border-bottom: 1px solid #f1f1f1;
+            &:hover{
+                background-color: #eee;
+            }
+          }
+    }
+}
+.widget_content{
+    background: url('../public/img/750x90Widget.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    padding: 1.35rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 11.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    h4{
+        color: #fff;
+        font-weight: 700;
+        font-size: 30px;
+        white-space: nowrap;
+        text-shadow: 0px 3px 3px hsl(0deg 0% 0% / 46%);
+        span{
+            padding-left: 20%;
+        }
+    }
+}
+
+.error_country{
+    position: absolute;
+    left: 50%;
+    top:-42px;
+    .errors{
+        color: rgb(192, 9, 9);
+        font-weight: 600;
+        text-align: center;
+        position: relative;
+        span{            
+            background-color: rgba(255, 47, 0, 0.1529411765);
+            color: rgb(231, 6, 6);
+            margin-bottom: 5px;
+            padding: 4px 15px;
+            border-radius: 3px;
+        }
+    }
+}
+
+.paginations{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px; 
+    nav{
+        ul{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 4px; 
+            li{
+                width: 55px;
+                height: 45px;
+                border:1px solid #ddd;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &.active{
+                   background-color: #f4543f;
+                }
+            }
+        }
+    }   
+    
+}
+.login_error{
+    color: rgb(192, 9, 9);
+    font-weight: 600;
+    text-align: left;
+    position: relative;
+    padding-left: 10px;
+    margin-top: 4px;
+}
