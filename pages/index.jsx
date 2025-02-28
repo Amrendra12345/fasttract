@@ -12,8 +12,8 @@ import SearchCountry from "./components/search-country";
 import { Col, Row } from "react-bootstrap";
 
 export default function Home(props) {
-  const { locale } = useRouter();
-  //console.log(props.ce_name)
+  const { locale, pathname } = useRouter();
+  //console.log(locale);
   //console.log(props.homeData.testimonial)
   return (
     <>

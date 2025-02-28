@@ -1573,6 +1573,14 @@ export default function Visa(props) {
                           : allproduct.title ==
                             "Visa electrónica de turista para Rusia"
                           ? "/country/Russia.webp"
+                          : allproduct.title + " " + allproduct.validity ==
+                            "Indian Tourist E-Visa" + " " + "30days"
+                          ? "/blog2/India 2.webp"
+                          : allproduct.title + " " + allproduct.validity ==
+                            "Indian Tourist E-Visa" + " " + "1years"
+                          ? "/blog2/India.webp"
+                          : allproduct.title == "Indian  Business E-Visa"
+                          ? "/blog2/India 3.webp"
                           : "/country/countryDefaulr.webp"
                       }
                       height={270}

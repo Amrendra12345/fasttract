@@ -7,19 +7,32 @@ const ChatHot = () => {
     <>
       <div className="chat_tms">
         <div className="tms">
-          <Link
+          <a
+            target="_blank"
             href={
               "https://desk.hottrix.in/show_form.php?form_id=U3FYR3R3VUZ1V2JWN3F4SExlT0p0UT09:cebca1b3d2a6c327d379fbcdfd9c257dafa3908e8693968d4e5da26fd430f492"
             }
           >
-            <Image
-              src={"/img/bls-qms.jpg"}
-              width={200}
-              height={90}
-              alt="bls-qms"
-              className="img-fluid"
-            />
-          </Link>
+            <div
+              style={{
+                width: "220px",
+                height: "115px",
+                position: "relative",
+                backgroundColor: "#e7e0de",
+                borderRadius: "4px",
+              }}
+            >
+              <Image
+                src={"/img/bls-qms.jpg"}
+                fill
+                priority
+                alt="bls-qms"
+                className="img-fluid"
+                sizes="40vw"
+                style={{ objectFit: "contain" }}
+              />
+            </div>
+          </a>
         </div>
       </div>
       <div

@@ -7,7 +7,7 @@ import Router, { useRouter } from "next/router";
 import NProgress from "nprogress"; //nprogress module
 import "nprogress/nprogress.css"; //styles of nprogress
 import Head from "next/head";
-import { LoginContextProvider } from "@/context/loginStatus";
+import { ModalProvider } from "@/context/loginStatus";
 
 //Binding events.
 Router.events.on("routeChangeStart", () => NProgress.start());
@@ -50,11 +50,11 @@ export default function MyApp({
         ></noscript>
       </Head>
       <SessionProvider session={session}>
-        <LoginContextProvider>
+        <ModalProvider>
           <Layout>
             <Component {...pageProps} />
           </Layout>
-        </LoginContextProvider>
+        </ModalProvider>
       </SessionProvider>
     </>
   );

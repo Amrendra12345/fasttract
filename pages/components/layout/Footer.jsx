@@ -159,7 +159,7 @@ const Footer = (props) => {
             </Row>
           </Col>
         </Row>
-        <ChatHot />
+        {/* <ChatHot /> */}
       </Container>
       <div className="copyRight">
         <p>© 2024 Fast Track Visa. All rights reserved.</p>
